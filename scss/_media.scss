@@ -1,0 +1,122 @@
+@media (max-width: 800px) {
+  // ********HOME PAGE************
+
+  // Main Header
+  #main-header {
+    height: 50vh;
+
+    #me {
+      padding-top: 10%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  //********HOME PAGE********
+
+  // Main Header & Inner Header
+  #main-header,
+  #inner-header {
+    height: 150px;
+
+    #nav-content {
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        margin-bottom: 15px;
+      }
+    }
+
+    #me {
+      display: none;
+    }
+  }
+
+  // Stack Grid Items And Grid Areas
+  #home-a #specials,
+  #home-b #achievements,
+  #home-c #process,
+  #about-b #icons,
+  #about-c #testimonials,
+  #items,
+  #contact-b #contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  #about-a {
+    #about-a-content {
+      grid-template-areas:
+        "img"
+        "exp"
+        "award1"
+        "award2"
+        "award3";
+    }
+  }
+
+  #contact-a #contact-form {
+    grid-template-areas:
+      "name1"
+      "email"
+      "subject"
+      "phone"
+      "message";
+  }
+
+  // **********ABOUT PAGE**********
+  #about-b #icons {
+    display: none;
+  }
+
+  #about-c #testimonials .testimonial {
+    margin-bottom: 20px;
+  }
+
+  #about-c #testimonials .testimonial:last-child {
+    margin-bottom: 0;
+  }
+
+  // ********CONTACT PAGE**********
+  #contact-b #contact-info .contact {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+  }
+
+  #contact-b #contact-info .contact:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  #contact-c h1 {
+    font-size: 30px;
+  }
+
+  // *******FOOTER*********
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 20px 0;
+    min-height: 90px;
+  }
+}
+
+@media (max-height: 380px) {
+  #main-header #me {
+    padding-top: 5%;
+  }
+}
+
+@media (max-height: 330px) {
+  // ********HOME PAGE************
+
+  // Main Header
+  #main-header {
+    height: 30vh;
+
+    #me {
+      display: none;
+    }
+  }
+}
